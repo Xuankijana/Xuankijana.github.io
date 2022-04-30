@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+  <title>Haukai Restaurant</title>
+  <meta content="Maori restaurant in Kerirkeri, Bay of Islands" name="description" />
+  <meta content="Maori restaurant, Kerirkeri, Bay of Islands" name="keywords" />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i"
+    rel="stylesheet" />
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+  <!-- =======================================================
+  * Note: This design modifies the Bootstrap template
+  * Template URL: https://bootstrapmade.com
+  * Personalisation by Xuan Nguyen
+  * Purpose: BIT 607 - Web programming | Assignment 2,3
+  ======================================================== -->
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <div class="logo me-auto">
+        <h1><a href="index.html">Haukai</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
+          <li>
+            <a class="nav-link scrollto" href="#book-a-table">Reservation</a>
+          </li>
+          <li><a class="nav-link scrollto" href="#chefs">Chefs</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
+
+      <a href="#book-a-table" class="book-a-table-btn scrollto">Book a table</a>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">
+                  <span>Haukai</span> Restaurant
+                </h2>
+                <p class="animate__animated animate__fadeInUp">
+                  Pushing the boundaries of contemporary Maori cuisine.
+                </p>
+                <div>
+                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">
+                  <span>Haukai</span> Restaurant
+                </h2>
+                <p class="animate__animated animate__fadeInUp">
+                  Pushing the boundaries of contemporary Maori cuisine
+                </p>
+                <div>
+                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= Food Menu Section ======= -->
+
+    <section id="menu" class="menu">
+      <div class="container">
+        <div class="section-title">
+          <h2>Kai & Whakainu - <span> Food & Drink </span></h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="menu-flters">
+              <li data-filter="*" class="filter-active">Show All</li>
+              <li data-filter=".filter-appetizers">Appetizers</li>
+              <li data-filter=".filter-main">Main</li>
+              <li data-filter=".filter-dessert">Dessert</li>
+              <li data-filter=".filter-red">Red (B/G)</li>
+              <li data-filter=".filter-white">White (B/G)</li>
+              <li data-filter=".filter-beer-and-cider">Beer and Cider</li>
+              <li data-filter=".filter-non-alcoholic">Non-Alcoholic</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row menu-container">
+          <!-- ======= Menu - Appetizers ======= -->
+
+          <div class="col-lg-6 menu-item filter-appetizers">
+            <div class="menu-content">
+              <a href="#">Rewena bread </a><span>$10</span>
+            </div>
+
+            <div class="menu-ingredients">Traditional māori bread</div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-appetizers">
+            <div class="menu-content">
+              <a href="#">Paua fritter </a><span>$16</span>
+            </div>
+
+            <div class="menu-ingredients">
+              Finely diced pieces of paua, served with a side salad and
+              horopito dressing
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-appetizers">
+            <div class="menu-content">
+              <a href="#">Raw fish </a><span>$20</span>
+            </div>
+
+            <div class="menu-ingredients">
+              Dried snapper fish marinated in coconut cream, served with
+              tomatoes and spring onions
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-appetizers">
+            <div class="menu-content">
+              <a href="#">Poached salmon </a><span>$22</span>
+            </div>
+
+            <div class="menu-ingredients">
+              Salmon poached in an orange and pistachio glaze, served with
+              rewena bread
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-appetizers">
+            <div class="menu-content">
+              <a href="#">Seafood basket </a><span>$25</span>
+            </div>
+
+            <div class="menu-ingredients">
+              Crumbed mussels, salt and pepper squid, crumbed hoki bites and
+              garlic prawns
+            </div>
+          </div>
+
+          <!-- ======= Food Menu - Main ======= -->
+
+          <div class="col-lg-6 menu-item filter-main">
+            <div class="menu-content">
+              <a href="#">Fish of the day </a><span>$25</span>
+            </div>
+
+            <div class="menu-ingredients">
+              Beer battered fish and kumara fries, served with a side salad
+              and homemade tartare
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-main">
+            <div class="menu-content">
+              <a href="#">Mussels and scallops </a><span>$25</span>
+            </div>
+
+            <div class="menu-ingredients">
+              Steamed mussel & scallop mousse, honey and soy broth
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-main">
+            <div class="menu-content">
+              <a href="#">Seafood chowder </a><span>$30</span>
+            </div>
+
+            <div class="menu-ingredients">
+              Creamy chowder filled with terakihi, prawn, hoki, scallops and
+              mussels, served with flatbread
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-main">
+            <div class="menu-content">
+              <a href="#">Pork belly </a><span>$30</span>
+            </div>
+
+            <div class="menu-ingredients">
+              Slow cooked pork belly served on a bed of apple slaw with
+              roasted kumara, and crispy noodle
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-main">
+            <div class="menu-content">
+              <a href="#">Lamb steak </a><span>$33</span>
+            </div>
+
+            <div class="menu-ingredients">
+              New zealand lamb coated in a kawakawa crumb, served with dijon
+              mustard glazed carrots, roasted butternut squash and a mushroom
+              jus
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-main">
+            <div class="menu-content">
+              <a href="#"> Venison </a><span>$33</span>
+            </div>
+
+            <div class="menu-ingredients">
+              Venison crusted with horopito, served with glazed plums, cabbage
+              salad and red wine jus
+            </div>
+          </div>
+
+          <!-- ======= Food Menu - Dessert ======= -->
+
+          <div class="col-lg-6 menu-item filter-dessert">
+            <div class="menu-content">
+              <a href="#"> Kāpiti ice cream </a><span>$10</span>
+            </div>
+
+            <div class="menu-ingredients">Check for daily specials</div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-dessert">
+            <div class="menu-content">
+              <a href="#">Steam pudding </a><span>$12</span>
+            </div>
+
+            <div class="menu-ingredients">
+              Golden syrup flavoured steam pudding, served with vanilla ice
+              cream
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-dessert">
+            <div class="menu-content">
+              <a href="#">Mini pavlova </a><span>$16</span>
+            </div>
+
+            <div class="menu-ingredients">
+              Mini pavlova served with kawakawa and lemon infused cream and
+              fresh fruit
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-dessert">
+            <div class="menu-content">
+              <a href="#"> Banoffee pie </a><span>$16</span>
+            </div>
+
+            <div class="menu-ingredients">
+              Toffee, fresh bananas and fresh cream
+            </div>
+          </div>
+
+          <!-- ======= Drink Menu - Red ======= -->
+
+          <div class="col-lg-6 menu-item filter-red">
+            <div class="menu-content">
+              <a href="#">Terrace Edge Pinot Noir </a><span>$53 | $13</span>
+            </div>
+
+            <div class="menu-ingredients">2012, Wairarapa</div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-red">
+            <div class="menu-content">
+              <a href="#">Altitude Pinot Noir </a><span>$64 | $15</span>
+            </div>
+
+            <div class="menu-ingredients">2010, Marlborough</div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-red">
+            <div class="menu-content">
+              <a href="#">Greystone Pinot Noir </a><span>$73 | $17</span>
+            </div>
+
+            <div class="menu-ingredients">2012, Wairarapa</div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-red">
+            <div class="menu-content">
+              <a href="#">Terrace Edge, Syrah </a><span>$53 | $13</span>
+            </div>
+
+            <div class="menu-ingredients">2012, Wairarapa</div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-red">
+            <div class="menu-content">
+              <a href="#"> Altitude Syrah </a><span>$64 | $15</span>
+            </div>
+
+            <div class="menu-ingredients">2010 Marlborough</div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-red">
+            <div class="menu-content">
+              <a href="#">Greystone Syrah </a><span>$73 | $17</span>
+            </div>
+            <div class="menu-ingredients">2012, Wairarapa</div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-red">
+            <div class="menu-content">
+              <a href="#">Pegasus Bay Merlot </a><span>$65 | $14</span>
+            </div>
+            <div class="menu-ingredients">2013, Wairarapa</div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-red">
+            <div class="menu-content">
+              <a href="#">Pegasus Bay Pinot Noir </a><span>$110 </span>
+            </div>
+
+            <div class="menu-ingredients">2013, Wairarapa</div>
+          </div>
+
+          <!-- ======= Drink Menu - White ======= -->
+
+          <div class="col-lg-6 menu-item filter-white">
+            <div class="menu-content">
+              <a href="#">Spade Oak Pinot Gris </a><span>$40 | $10</span>
+            </div>
+            <div class="menu-ingredients">2011, Gisborne</div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-white">
+            <div class="menu-content">
+              <a href="#">Maude Pinot Gris </a><span>$49.50 | $11</span>
+            </div>
+            <div class="menu-ingredients">2017, Otago</div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-white">
+            <div class="menu-content">
+              <a href="#">Charles Wiffen Chardonnay </a><span>$48 | $11</span>
+            </div>
+            <div class="menu-ingredients">2013, Otago</div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-white">
+            <div class="menu-content">
+              <a href="#">Amisfield, Riesling </a><span>$53 | $12</span>
+            </div>
+            <div class="menu-ingredients">2016, Otago</div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-white">
+            <div class="menu-content">
+              <a href="#">Lamont Riesling </a><span>$57 | $13</span>
+            </div>
+
+            <div class="menu-ingredients">2010, Otago</div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-white">
+            <div class="menu-content">
+              <a href="#">Elephant Hill Viognier </a><span>$55 | $12</span>
+            </div>
+            <div class="menu-ingredients">2013, Hawkes Bay</div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-white">
+            <div class="menu-content">
+              <a href="#">Folium Sauvignon Blanc </a><span>$52 | $11</span>
+            </div>
+
+            <div class="menu-ingredients">2011, Marlborough</div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-white">
+            <div class="menu-content">
+              <a href="#">Billecart-Salmon Brut Reserve </a><span>$120</span>
+            </div>
+
+            <div class="menu-ingredients">France</div>
+          </div>
+
+          <!-- ======= Drink Menu - Beer and Cider ======= -->
+
+          <div class="col-lg-6 menu-item filter-beer-and-cider">
+            <div class="menu-content">
+              <a href="#">Garage project range </a><span>$11</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-beer-and-cider">
+            <div class="menu-content">
+              <a href="#">Tuatara range </a><span>$11</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-beer-and-cider">
+            <div class="menu-content">
+              <a href="#">Panhead range </a><span>$10</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-beer-and-cider">
+            <div class="menu-content">
+              <a href="#">Coopers Ale </a><span>$10</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-beer-and-cider">
+            <div class="menu-content">
+              <a href="#">Heineken </a><span>$11</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-beer-and-cider">
+            <div class="menu-content">
+              <a href="#">Moa Cider </a><span>$10</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-beer-and-cider">
+            <div class="menu-content">
+              <a href="#"> Crooked Cider </a><span>$10</span>
+            </div>
+          </div>
+
+          <!-- ======= Drink Menu - Non alcoholic ======= -->
+
+          <div class="col-lg-6 menu-item filter-non-alcoholic">
+            <div class="menu-content">
+              <a href="#">Mineral water </a><span>$4.0</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-non-alcoholic">
+            <div class="menu-content">
+              <a href="#">Soft drinks </a><span>$4.0</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-non-alcoholic">
+            <div class="menu-content">
+              <a href="#">Juice </a><span>$4.0</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-non-alcoholic">
+            <div class="menu-content">
+              <a href="#">Coffee </a><span>$4.5</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-non-alcoholic">
+            <div class="menu-content">
+              <a href="#">Tea </a><span>$3.5</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Menu Section -->
+
+    <!-- ======= Book A Table Section ======= -->
+    <section id="book-a-table" class="book-a-table">
+      <div class="container">
+        <div class="section-title">
+          <h2>Make a <span>Reservation</span></h2>
+          <p>
+            Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
+            adipisci expedita at voluptas atque vitae autem.
+          </p>
+        </div>
+
+        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
+                data-msg="Please enter at least 4 chars" />
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                data-rule="email" data-msg="Please enter a valid email" />
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone"
+                data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4"
+                data-msg="Please enter at least 4 chars" />
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4"
+                data-msg="Please enter at least 4 chars" />
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="number" class="form-control" name="people" id="people" placeholder="# of people"
+                data-rule="minlen:1" data-msg="Please enter at least 1 chars" />
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">
+              Your booking request was sent. We will call back or send an
+              Email to confirm your reservation. Thank you!
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- End Book A Table Section -->
+
+    <!-- ======= Chefs Section ======= -->
+    <section id="chefs" class="chefs">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Proffesional <span>Chefs</span></h2>
+          <p>
+            Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
+            adipisci expedita at voluptas atque vitae autem.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="member">
+              <div class="pic">
+                <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="" />
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>E kanikani ana ōku tāwara</span>
+                <span> My tastebuds are dancing</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member">
+              <div class="pic">
+                <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="" />
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Kāre i tua atu i tēnei</span>
+                <span> There's nothing like this</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member">
+              <div class="pic">
+                <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="" />
+              </div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>Koia kei a koe</span>
+                <span> You sure know how to cook</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Chefs Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2><span>Contact</span> Us</h2>
+          <p>
+            Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
+            adipisci expedita at voluptas atque vitae autem.
+          </p>
+        </div>
+      </div>
+
+      <div class="map">
+        <iframe style="border: 0; width: 100%; height: 350px"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.095401224207!2d173.94758021471057!3d-35.22899509835531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0bb76f05800a6d%3A0x912328fde4819391!2sHaukai%20Restaurant!5e0!3m2!1svi!2snz!4v1651315754078!5m2!1svi!2snz"
+          frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="container mt-5">
+        <div class="info-wrap">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 info">
+              <i class="bi bi-geo-alt"></i>
+
+              <h4>Location:</h4>
+
+              <p>1 Island Street <br />Kerikeri, Bay of Islands</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-clock"></i>
+
+              <h4>Open Hours:</h4>
+
+              <p>Wed - Sun:<br />17:00 PM - 23:00 PM</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-envelope"></i>
+
+              <h4>Email:</h4>
+
+              <p>
+                bookings@haukai.co.nz<br />
+                info@haukai.co.nz
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-phone"></i>
+
+              <h4>Call:</h4>
+
+              <p>+64 9 401 4019<br />+64 4 938 7361</p>
+            </div>
+          </div>
+        </div>
+
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required />
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required />
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required />
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">
+              Your message has been sent. Thank you!
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Haukai</h3>
+      <p>Pushing the boundaries of contemporary Maori cuisine</p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
